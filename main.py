@@ -14,7 +14,7 @@ def calculate_score(cards):
     if 11 in cards and 10 in cards and len(cards) == 2:
         return 0
 
-    # Hint 8: Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
+    # Hint : Inside calculate_score() check for an 11 (ace). If the score is already over 21, remove the 11 and replace
     # it with a 1. You might need to look up append() and remove().
     if 11 in cards and sum(cards) > 21:
         cards.remove(11)
@@ -44,7 +44,7 @@ def compare(users_score, computers_score):
         return "You lose. Computer scored higher."
 
 
-# Hint 14: Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of
+# Hint : Ask the user if they want to restart the game. If they answer yes, clear the console and start a new game of
 # blackjack and show the logo from art.py
 def play_game():
     print(logo)
